@@ -1,4 +1,5 @@
 import mongoose from "mongoose";
+//maybe add some field later on accroding to the loan matching algorithm .
 
 const UserSchema = new mongoose.Schema({
     _id: { type: mongoose.Schema.Types.ObjectId, auto: true },  // Auto-generate ID
@@ -55,5 +56,5 @@ const UserSchema = new mongoose.Schema({
 //     next();
 // });
 
-const Lender = mongoose.model('Lender', UserSchema);
-export default Lender ; 
+const LenderSchema = mongoose.model('LenderSchema', UserSchema);
+export default LenderSchema ; 

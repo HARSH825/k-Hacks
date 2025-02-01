@@ -1,9 +1,9 @@
 import bcrypt from 'bcrypt';
 import { PasswordSchema } from '../validation/PasswordValidation.js';  // Assuming Password validation is handled
-import Lender from '../models/LenderUserSchema.js';  // Lender model
-import dotenv from 'dotenv';
+import Lender from '../models/LenderUserSchema.js';  // Lender model 
+import dotenv from 'dotenv'; 
 
-dotenv.config();
+dotenv.config(); 
 
 const SALT_ROUNDS =10;
 
