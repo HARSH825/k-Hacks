@@ -14,5 +14,5 @@ router.post('/signup/email', LendersignupEmailController);
 router.post('/signup/password', LendersignupPasswordController);
 // router.post('/login',LenderloginController);
 router.get('/liveloans', getLiveLoansController);  // add middleware remainig in this route to validate lender.
-
+// router.get('/liveloans/:_id',getBorrowerInfoController);
 export default router;
