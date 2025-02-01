@@ -6,8 +6,9 @@ dotenv.config();
 const app = express(); 
 app.use(express.json());
 import lenderRouter from './routes/lenderRouter.js';
+import borrowerRouter from './routes/borrowerRouter.js';
 app.use('/lend',lenderRouter);
-// app.use('/borrow',borrowerRouter);
+app.use('/borrow',borrowerRouter);
  app.use(cors()); 
  
  connectDb();  
