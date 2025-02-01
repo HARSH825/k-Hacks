@@ -3,10 +3,13 @@ import cors from 'cors';
 import dotenv from 'dotenv'
 import connectDb from './db.js/connectDb.js';
 dotenv.config();
-
 const app = express(); 
+app.use(express.json());
+import lenderRouter from './routes/lenderRouter.js';
+app.use('/lend',lenderRouter);
+// app.use('/borrow',borrowerRouter);
  app.use(cors()); 
- app.use(express.json());  
+ 
  connectDb();  
  
 const PORT = process.env.PORT;
