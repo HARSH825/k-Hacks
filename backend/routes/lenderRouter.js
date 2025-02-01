@@ -9,6 +9,7 @@ import LendersignupPasswordController from '../controller/lenderPasswordControll
 import getLiveLoansController from "../controller/getLiveLoansController.js";
 import getBorrowerInfoController from "../controller/getBorrowerInfoController.js";
 import getriskrankController from "../controller/getriskrankController.js";
+import {getLenderMatches} from "../controller/getBorrowerMatchesController.js";
 // Lender Routes
 router.post('/signup/phoneNumber', LendersignupPhoneController);
 router.post('/signup/email', LendersignupEmailController);
@@ -17,4 +18,5 @@ router.post('/signup/password', LendersignupPasswordController);
 router.get('/liveloans', getLiveLoansController);  // add middleware remainig in this route to validate lender.
 router.get('/liveloans/:_id',getBorrowerInfoController); 
 router.get('/riskRanking',getriskrankController);
+router.get('/matched/:lenderId',getLenderMatches);
 export default router;
