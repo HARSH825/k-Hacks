@@ -35,14 +35,14 @@ const BorrowersignupPasswordController = async (req, res) => {
         // Hash the password before storing
         const hashedPassword = await bcrypt.hash(password, SALT_ROUNDS);
 
-        // Create the borrower with phoneNumber, email, password, and default values
+        // Create the borrower with phoneNumber, email, password
         const newBorrower = await Borrower.create({
             phoneNumber,
             email,
             password: hashedPassword,
             createdAt: new Date(),
 
-            // Default values for loan-related fields
+            
             loan_amnt: 5000,
             funded_amnt: 5000,
             term: "36 months",
