@@ -36,6 +36,42 @@
       "artifacts": [
         "LoanContract"
       ]
+    },
+    "D:\\quisk\\k-Hacks\\contracts\\LoanPooling.sol": {
+      "lastModificationDate": 1738465860005,
+      "contentHash": "47d066a62b32b7404f01cceefed4a922",
+      "sourceName": "contracts/LoanPooling.sol",
+      "solcConfig": {
+        "version": "0.8.28",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "LoanFunding"
+      ]
     }
   }
 }
