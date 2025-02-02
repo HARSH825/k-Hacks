@@ -19,4 +19,5 @@ router.get('/liveloans', getLiveLoansController);  // add middleware remainig in
 router.get('/liveloans/:_id',getBorrowerInfoController); 
 router.get('/riskRanking',getriskrankController);
 router.get('/matched/:lenderId',getLenderMatches);
+// router.post('/verify-otp',otpService);
 export default router;
