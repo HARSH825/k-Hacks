@@ -1,0 +1,9 @@
+{ 
+  "devDependencies": {
+    "ethers": "^6.13.5",
+    "hardhat": "^2.22.18"
+  },
+  "dependencies": {
+    "web3": "^4.16.0"
+  }
+}
