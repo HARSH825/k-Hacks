@@ -1,4 +1,4 @@
-# k-Hacks
+# K!-Hacks
 # LendWise - P2P Lending Platform
 
 **LendWise** is a decentralized Peer-to-Peer (P2P) lending platform built on the **Ethereum blockchain**, enabling borrowers and lenders to directly connect and transact with transparency, security, and low costs. The platform uses **smart contracts** to automate processes and ensure trust, while offering innovative features to benefit both lenders and borrowers.
